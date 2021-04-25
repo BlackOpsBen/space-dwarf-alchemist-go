@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Space Dwarf Alchemist Go!</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1920px; height: 1080px; background: #FFFFFF"></canvas>
+    <script src="Build/Test4.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Test4.data",
+        frameworkUrl: "Build/Test4.framework.js",
+        codeUrl: "Build/Test4.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Ben Mora",
+        productName: "Space Dwarf Alchemist Go!",
+        productVersion: "0.1",
+      });
+    </script>
+  </body>
+</html>
